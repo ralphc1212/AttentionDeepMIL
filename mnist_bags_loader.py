@@ -28,7 +28,7 @@ class MnistBags(data_utils.Dataset):
 
     def _form_bags(self):
         if self.train:
-            train_loader = data_utils.DataLoader(datasets.MNIST('../datasets',
+            train_loader = data_utils.DataLoader(datasets.MNIST('~/data',
                                                                 train=True,
                                                                 download=True,
                                                                 transform=transforms.Compose([
